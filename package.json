@@ -1,0 +1,35 @@
+{
+  "name": "composition-api",
+  "version": "1.0.0",
+  "description": "Orchestrates all the individual microservices for TCSS 531 final project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irving09/composition-api.git"
+  },
+  "keywords": [
+    "koa",
+    "node",
+    "microservices",
+    "uw",
+    "tacoma",
+    "tcss",
+    "531"
+  ],
+  "author": "team 2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Irving09/composition-api/issues"
+  },
+  "homepage": "https://github.com/Irving09/composition-api#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "co": "^4.6.0",
+    "koa": "^1.2.4",
+    "koa-router": "^5.4.0",
+    "boom": "^4.2.0"
+  }
+}
