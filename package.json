@@ -26,10 +26,11 @@
   },
   "homepage": "https://github.com/Irving09/composition-api#readme",
   "dependencies": {
+    "app-module-path": "^2.1.0",
     "bluebird": "^3.4.6",
+    "boom": "^4.2.0",
     "co": "^4.6.0",
     "koa": "^1.2.4",
-    "koa-router": "^5.4.0",
-    "boom": "^4.2.0"
+    "koa-router": "^5.4.0"
   }
 }
