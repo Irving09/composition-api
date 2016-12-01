@@ -4,8 +4,10 @@ const co = require('co');
 const Adapter = require('src/product/adapter');
 const Boom = require('boom');
 
+const LIMIT = 20;
+
 exports.getProducts = co.wrap(function* () {
-    this.body = yield Adapter.getProducts();
+    this.body = yield Adapter.getProducts(this.query);
 });
 
 exports.getProductById = co.wrap(function* () {

@@ -9,4 +9,4 @@ const product = require('src/product/route');
 app.use(product.routes());
 
 // Start the app
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3001);
