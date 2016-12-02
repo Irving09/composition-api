@@ -24,3 +24,35 @@ exports.getProductById = co.wrap(function* () {
         this.throw(error.message);
     }
 });
+
+exports.getCustomerInfoById = co.wrap(function* () {
+    this.assert(
+        !isNaN(this.params.id) && this.params.id > 0,
+        400,
+        `${this.params.id} is required`
+    );
+
+    try {
+        this.body = {"message":"checkout service is not ready yet"}
+        // this.body = yield Adapter.getCustomerInfoById(this.params.id);
+        this.status = 200;
+    } catch (e) {
+        this.throw(e.message);
+    }
+});
+
+exports.getPaymentInfoById = co.wrap(function* () {
+    this.assert(
+        !isNaN(this.params.id) && this.params.id > 0,
+        400,
+        `${this.params.id} is required`
+    );
+
+    try {
+        this.body = {"message":"checkout service is not ready yet"}
+        // this.body = yield Adapter.getPaymentInfoById(this.params.id);
+        this.status = 200;
+    } catch (e) {
+        this.throw(e.message);
+    }
+});

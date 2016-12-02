@@ -24,3 +24,13 @@ exports.getProducts = co.wrap(function* (options) {
 exports.getProductById = co.wrap(function* (id) {
     return yield http.get(`${api['listview-svc']}/products/${id}`);
 });
+
+//get customer info from Checkout service
+exports.getCustomerInfoById = co.wrap(function* (id){
+    return yield http.get(`${api['checkout-service']}/customer_info/${id}`);
+});
+
+//get payment info from Checkout service
+exports.getPaymentInfoById = co.wrap(function* (id){
+    return yield http.get(`${api['checkout-service']}/payment_info/${id}`);
+});
