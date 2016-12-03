@@ -1,3 +1,4 @@
 {
-  "listview-svc": "http://list-view-microservice.us-west-2.elasticbeanstalk.com"
+  "listview-svc": "http://list-view-microservice.us-west-2.elasticbeanstalk.com",
+  "checkout-svc": "http://ec2-35-164-55-165.us-west-2.compute.amazonaws.com:8000"
 }
