@@ -53,3 +53,24 @@ exports.getPaymentInfoById = co.wrap(function* () {
         this.throw(e.message);
     }
 });
+
+exports.getOrderFromCart = co.wrap(function* (next) {
+    console.log("===== body: ", this.request.body)
+    this.status = 200;
+    this.body = {
+        "message" : "post data successfull"
+    }
+
+    yield(next);
+    // try {
+    //     //dummy data
+    //     this.body = {
+    //         "status":200,
+    //         "message":"successfully post data :)"
+    //     }
+    //     // this.body = yield Adapter.getPaymentInfoById(this.params.id);
+    //     this.status = 200;
+    // } catch (e) {
+    //     this.throw(e.message);
+    // }
+})
